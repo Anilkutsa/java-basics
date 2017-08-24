@@ -3,6 +3,14 @@ package com.java_concepts.datastructures;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author anil
+ *
+ *         Every trie node has two components. One, a map for character and its
+ *         node, two, boolean endOfWord.
+ *         
+ */
+
 public class Trie {
 
 	private final TrieNode root;
@@ -10,7 +18,7 @@ public class Trie {
 	public Trie() {
 		root = new TrieNode();
 	}
-	
+
 	private class TrieNode {
 		Map<Character, TrieNode> children;
 		boolean endOfWord;
